@@ -1,3 +1,16 @@
+<div *ngFor="let hero of heroes; let i=index; let impar=odd; trackBy: trackById" [class.impar]="impar">
+    {{impar}} {{i}} = {{hero.name}}
+</div>
+
+<p *ngIf="true">
+    Expression is true and ngIf is true.
+    This paragraph is in the DOM.
+</p>
+<p *ngIf="false">
+    Expression is false and ngIf is false.
+    This paragraph is not in the DOM.
+</p>
+
 <h1>My First Attribute Directive</h1>
 
 <h4>Pick a highlight color</h4>
