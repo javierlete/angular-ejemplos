@@ -13,4 +13,8 @@ export class HighlightDirective implements OnInit {
 
   constructor(private el: ElementRef) {  }
 
+  //private el: ElementRef;
+  //constructor(el: ElementRef) {
+  //  this.el = el;
+  //}
 }
