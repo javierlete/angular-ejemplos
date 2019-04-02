@@ -4,10 +4,10 @@ import { Directive, ElementRef, OnInit, HostListener, Input } from '@angular/cor
   selector: '[appHighlight]'
 })
 export class HighlightDirective implements OnInit {
-  @Input() highlightColor: string;
+  @Input() appHighlight: string;
   
   ngOnInit(): void {
-    this.el.nativeElement.style.backgroundColor = this.highlightColor;
+    this.el.nativeElement.style.backgroundColor = this.appHighlight;
     console.log(this.el.nativeElement.innerHTML);
     this.el.nativeElement.innerHTML = '||' + this.el.nativeElement.innerHTML + '||';
     console.log(this.el.nativeElement.innerHTML);
@@ -21,7 +21,7 @@ export class HighlightDirective implements OnInit {
   //}
 
   @HostListener('mouseenter') onMouseEnter() {
-    this.highlight(this.highlightColor);
+    this.highlight(this.appHighlight);
   }
   
   @HostListener('mouseleave') onMouseLeave() {
