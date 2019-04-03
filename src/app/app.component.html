@@ -2,14 +2,14 @@
     {{impar}} {{i}} = {{hero.name}}
 </div>
 
-<p *ngIf="true">
+<p *ngIf="false; else sino">
     Expression is true and ngIf is true.
     This paragraph is in the DOM.
 </p>
-<p *ngIf="false">
+<ng-template #sino>
     Expression is false and ngIf is false.
     This paragraph is not in the DOM.
-</p>
+</ng-template>
 
 <h1>My First Attribute Directive</h1>
 
