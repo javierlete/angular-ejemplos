@@ -1,2 +1,5 @@
-<input (keyup)="onKey($event)">
 <p>{{values}}</p>
+<input (keyup)="onKey($event)">
+
+<input #box (keyup)="0"/>
+<p>{{box.value}}</p>
