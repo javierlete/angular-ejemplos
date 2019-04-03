@@ -3,3 +3,6 @@
 
 <input #box (keyup)="0"/>
 <p>{{box.value}}</p>
+
+<input #inputbox (keyup)="onKeyInputBox(inputbox.value)" />
+<p>{{values}}</p>

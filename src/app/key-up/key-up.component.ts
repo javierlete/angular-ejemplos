@@ -13,4 +13,7 @@ export class KeyUpComponent {
     this.values += event.key + ' | ';//event.target.value + ' | ';
   }
 
+  onKeyInputBox(value: string) { //any) { // without type info
+    this.values += value + ' | ';//event.target.value + ' | ';
+  }
 }
