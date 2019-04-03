@@ -1,3 +1,15 @@
+<p *appUnless="estado">
+    (A) This paragraph is displayed because the condition is false.
+</p>
+
+<p *appUnless="cb.checked">
+    (A) This paragraph is displayed because the condition is false.
+</p>
+
+{{cb.checked}}
+
+<input #cb type="checkbox" (change)="estado = !estado" />
+
 <div *ngFor="let hero of heroes; let i=index; let impar=odd; trackBy: trackById" [class.impar]="impar">
     {{impar}} {{i}} = {{hero.name}}
 </div>

@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   color = 'blue';
 
+  estado = false;
+
   heroes = [ { name: 'uno' }, { name: 'dos' } ];
 
   setColor(color: string) {
