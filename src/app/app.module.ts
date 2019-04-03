@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HighlightDirective } from './highlight.directive';
 import { UnlessDirective } from './unless.directive';
+import { KeyUpComponent } from './key-up/key-up.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HighlightDirective,
-    UnlessDirective
+    UnlessDirective,
+    KeyUpComponent
   ],
   imports: [
     BrowserModule,
