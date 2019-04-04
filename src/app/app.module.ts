@@ -8,6 +8,8 @@ import { UnlessDirective } from './unless.directive';
 import { KeyUpComponent } from './key-up/key-up.component';
 import { VoterComponent } from './voter/voter.component';
 import { VoteTakerComponent } from './votetaker/votetaker.component';
+import { VersionChildComponent } from './version-child/version-child.component';
+import { VersionParentComponent } from './version-parent/version-parent.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { VoteTakerComponent } from './votetaker/votetaker.component';
     UnlessDirective,
     KeyUpComponent,
     VoterComponent,
-    VoteTakerComponent
+    VoteTakerComponent,
+    VersionChildComponent,
+    VersionParentComponent
   ],
   imports: [
     BrowserModule,
