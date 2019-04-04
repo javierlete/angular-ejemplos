@@ -19,6 +19,7 @@ export class VersionChildComponent implements OnChanges {
     let log: string[] = [];
 
     if(changes.minor && !changes.minor.isFirstChange() && changes.minor.currentValue == 0) {
+      debugger;
       log.push('Nueva versión de la aplicación');
     }
 
