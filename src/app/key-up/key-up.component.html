@@ -6,3 +6,6 @@
 
 <input #inputbox (keyup)="onKeyInputBox(inputbox.value)" />
 <p>{{values}}</p>
+
+<input #inputEnter (keyup.enter)="onEnter(inputEnter.value)" />
+<p>{{value}}</p>
